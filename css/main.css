@@ -1,0 +1,12 @@
+.container {
+    width: 1200px;
+    margin: auto;
+}
+.welcome{
+    background: url(../img/index-bgr1200.jpg);
+    width: 100%;
+    height: 510px;
+}
+.promo-card__icon{
+    /* background: url(../img/svg/icon-1.svg); */
+}
