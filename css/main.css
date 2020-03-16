@@ -1,6 +1,8 @@
+
 .container {
     width: 1200px;
     margin: auto;
+    background-color: blueviolet;
 }
 .welcome{
     background: url(../img/index-bgr1200.jpg);
