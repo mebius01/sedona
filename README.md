@@ -1,7 +1,7 @@
 # Техническое задание на вёрстку
 
 * Название сайта: Седона
-* Домен: [https://mebius01.github.io/sedona/index.html](https://mebius01.github.io/sedona/index.html)
+* Домен: [https://mebius01.github.io/sedona/](https://mebius01.github.io/sedona/)
 
 ## Общие технические требования
 
