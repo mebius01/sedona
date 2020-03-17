@@ -1,0 +1,27 @@
+:root {
+    --blue_color: #81B3D2;
+    --white_color: #FFFFF5;
+    --brown_color: #766357;
+}
+
+.filter {
+    background: url(../img/hotels-bgr1200.jpg);
+}
+
+.copyright__ul {
+    list-style: none;
+    display: flex;
+}
+.copyright__item {
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 400;
+}
+.copyright__link {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    width: 26px;
+    height: 29px;
+    margin: 0 8px;
+}

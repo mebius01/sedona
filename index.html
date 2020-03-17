@@ -23,7 +23,7 @@
                     <li class="nav__item"><a href="" class="nav__link nav__link--dead">ФОТО И ВИДЕО</a></li>
                     <li class="nav__item"><a href="" class="nav__link"><img class="nav__link--logo" src="img/logo.png" alt=""></a></li>
                     <li class="nav__item"><a href="" class="nav__link nav__link--dead">КАРТА ШТАТА</a></li>
-                    <li class="nav__item"><a href="" class="nav__link">ГОСТИНИЦЫ</a></li>
+                    <li class="nav__item"><a href="hotels.html" class="nav__link">ГОСТИНИЦЫ</a></li>
                 </ul>
             </nav>
             <img class="nav__footer" src="img/index-bgr-mask1200.png" alt="">
@@ -112,13 +112,16 @@
                             <p><label class="hotel-search--text" for="out_date">ДАТА ВЫЕЗДА:</label> <input class="hotel-search--input" type="date" name="out_date" id="id_out_date"></p>
                             <p>
                                 <label class="hotel-search--text" for="adult">ВЗРОСЛЫЕ:</label>
-                                <button class="hotel-search--plasminus">+</button>
-                                <input class="hotel-search--input hotel-search--number" type="number" name="adult" id="id_adult" value="2">
-                                <button class="hotel-search--plasminus">-</button>
+                                <span class="test">
+                                    <input type="button" value="-" class="hotel-search--plasminus">
+                                    <input type="number" step="1" min="1" max="" name="quantity" value="2" class="hotel-search--input hotel-search--number">
+                                    <input type="button" value="+" class="hotel-search--plasminus">
+                                </span>
+                            
                                 <label class="hotel-search--text" for="children">ДЕТИ:</label>
-                                <button class="hotel-search--plasminus">+</button>
-                                <input class="hotel-search--input hotel-search--number" type="number" name="children" id="id_children" value="0">
-                                <button class="hotel-search--plasminus">-</button>
+                                <input type="button" value="-" class="hotel-search--plasminus">
+                                <input type="number" step="1" min="0" max="" name="quantity" value="0" class="hotel-search--input hotel-search--number">
+                                <input type="button" value="+" class="hotel-search--plasminus">
                             </p>
                             <p><button class="hotel-search__submit" type="submit">НАЙТИ</button></p>
                         </form>
