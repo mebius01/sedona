@@ -35,11 +35,9 @@
 .sort__ul {
     list-style: none;
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 .sort__item {
-    padding-left: 36px;
+    padding-right: 36px;
 }
 
 .sort__link {
@@ -49,22 +47,83 @@
     line-height: 18px;
     font-weight: 400;
 }
+.sort__link:hover {
+    color: var(--brown_color);
+    border-bottom: #81B3D2 1px dotted;
+}
 .sort--padding {
     padding: 6px;
     margin: 0;
 }
 .fa-angle-down, .fa-angle-up {
+    /* border: none; */
     font-size: 18px;
+}
+.fa-angle-down:hover, .fa-angle-up:hover {
+    color: black;
 }
 .article {
     padding: 33px 72px;
     border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: space-between;
 }
-/* .copyright__link {
-    display: inline-block;
-    vertical-align: middle;
-    font-size: 0;
-    width: 26px;
-    height: 29px;
-    margin: 0 8px; */
+.article__body {
+    display: flex;
+}
+.article__text {
+    margin-left: 28px;
+    display: grid;
+    gap: 12px;
+}
+.article__details-book {
+    align-self: end;
+}
+.article__rating {
+    display: grid;
+}
+.article-star {
+    justify-self: end;
+    color: var(--blue_color);
+}
+.article-rating {
+    color: rgba(0, 0, 0, 0.596);
+    background: hsla(0, 0%, 89%, 0.568);
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    padding: 3px 12px 3px 12px;
+    align-self: end;
+}
+.article__title {
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: black;
+}
+.article__title:hover {
+    color: var(--blue_color);
+}
+.article__hotel-price {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #333333;
+}
+.article__details, .article__book {
+    text-decoration: none;
+    color: var(--white_color);
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    padding: 3px 12px 3px 12px;
+}
+.article__details {
+    background: var(--blue_color);
+}
+.article__book {
+    background: var(--brown_color);
 }
