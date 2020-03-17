@@ -6,16 +6,39 @@
 
 .filter {
     background: url(../img/hotels-bgr1200.jpg);
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 72px;
+}
+.list {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white_color);
 }
 
-.copyright__ul {
+.list__ul {
+    list-style: none;
+    padding-right: 112px;
+}
+
+.list__item {
+    margin: 26px 0;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+}
+/* .main {
+    padding: 0 7;
+} */
+.sort__ul {
     list-style: none;
     display: flex;
 }
-.copyright__item {
+.sort__item {
     font-size: 14px;
     line-height: 48px;
     font-weight: 400;
+    padding: 36px 36px 36px 0;
 }
 .copyright__link {
     display: inline-block;

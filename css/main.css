@@ -10,6 +10,11 @@
     --white_color: #FFFFF5;
     --brown_color: #766357;
 }
+.title-h4 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+}
 .title-h2 {
     text-align: center;
     font-weight: 700;
