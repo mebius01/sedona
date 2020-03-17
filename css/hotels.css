@@ -27,24 +27,44 @@
     line-height: 14px;
     font-weight: 400;
 }
-/* .main {
-    padding: 0 7;
-} */
+.sort {
+    display: flex;
+    justify-content: space-between;
+    padding: 33px 72px;
+}
 .sort__ul {
     list-style: none;
     display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
 .sort__item {
-    font-size: 14px;
-    line-height: 48px;
-    font-weight: 400;
-    padding: 36px 36px 36px 0;
+    padding-left: 36px;
 }
-.copyright__link {
+
+.sort__link {
+    text-decoration: none;
+    color: var(--blue_color);
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.sort--padding {
+    padding: 6px;
+    margin: 0;
+}
+.fa-angle-down, .fa-angle-up {
+    font-size: 18px;
+}
+.article {
+    padding: 33px 72px;
+    border-top: 1px solid #e5e5e5;
+}
+/* .copyright__link {
     display: inline-block;
     vertical-align: middle;
     font-size: 0;
     width: 26px;
     height: 29px;
-    margin: 0 8px;
+    margin: 0 8px; */
 }
