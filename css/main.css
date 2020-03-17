@@ -8,6 +8,7 @@
 :root {
     --blue_color: #81B3D2;
     --white_color: #FFFFF5;
+    --brown_color: #766357;
 }
 .title-h2 {
     text-align: center;
@@ -60,9 +61,26 @@
     height: 100%;
     text-decoration: none;
     color: rgb(48, 47, 47);
+    font-size: 14px;
+    line-height: 56px;
+    font-weight: 700;
 }
 .nav__link:hover {
     color: var(--blue_color);
+}
+.nav__link--active {
+    color: var(--brown_color);
+    cursor: default;
+}
+.nav__link--dead {
+    color: rgba(128, 128, 128, 0.425);
+    cursor: default;
+}
+.nav__link--dead:hover {
+    color: rgba(128, 128, 128, 0.425);
+}
+.nav__link--active:hover {
+    color: var(--brown_color)
 }
 .nav__link--logo {
     width: auto;
@@ -72,6 +90,7 @@
     bottom: -1px;
     width: 100.1%;
 }
+
 .block-center {
     display: grid;
     justify-content: center;
@@ -171,7 +190,7 @@
 }
 .hotel-search__header {
     height: 88px;
-    background-color: #766357;
+    background-color: var(--brown_color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,4 +209,76 @@
 }
 .hotel-search__form {
     border: 1px solid;
+}
+.map {
+    height: 594px;
+    background: url(../img/index-map.jpg);
+    display: grid;
+}
+.footer-bottom {
+    height: 126px;
+    align-self: end;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--white_color);
+}
+.visitsenoda {
+    text-decoration: none;
+    color: #000000;
+    font-size: 21px;
+    line-height: 48px;
+    font-weight: 700;
+}
+.icon-block__ul {
+    list-style: none;
+    display: flex;
+}
+
+.icon-block__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    background-color: var(--blue_color);
+    height: 46px;
+    width: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+}
+.icon-block__link:hover {
+    cursor: pointer;
+    background-color: rgb(110, 154, 182);
+}
+
+
+.copyright__ul {
+    list-style: none;
+    display: flex;
+}
+.copyright__item {
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 400;
+}
+.copyright__link {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 0;
+    width: 26px;
+    height: 29px;
+    margin: 0 8px;
+}
+.icon-a {
+    background: url(../img/icon-a.png);
+}
+.icon-academ {
+    background: url(../img/icon-academ.png);
+}
+.icon-a:hover {
+    background: url(../img/icon-a-ative.png);
+}
+.icon-academ:hover {
+    background: url(../img/icon-academ-active.png);
 }
