@@ -108,13 +108,19 @@
                     <h2 class="hotel-search__header title-h1">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
                     <div class="hotel-search__body">
                         <form action="." class="hotel-search__form">
-                            <p><label class="text" for="in_date">ДАТА ЗАЕЗДА:</label> <input type="date" name="in_date" id="id_in_date"></p>
-                            <p><label class="text" for="out_date">ДАТА ВЫЕЗДА:</label> <input type="date" name="out_date" id="id_out_date"></p>
+                            <p><label class="hotel-search--text" for="in_date">ДАТА ЗАЕЗДА:</label> <input class="hotel-search--input" type="date" name="in_date" id="id_in_date"></p>
+                            <p><label class="hotel-search--text" for="out_date">ДАТА ВЫЕЗДА:</label> <input class="hotel-search--input" type="date" name="out_date" id="id_out_date"></p>
                             <p>
-                                <label class="text" for="adult">ВЗРОСЛЫЕ:</label> <input type="number" name="adult" id="id_adult">
-                                <label class="text" for="children">ДЕТИ:</label> <input type="number" name="children" id="id_children">
+                                <label class="hotel-search--text" for="adult">ВЗРОСЛЫЕ:</label>
+                                <button class="hotel-search--plasminus">+</button>
+                                <input class="hotel-search--input hotel-search--number" type="number" name="adult" id="id_adult" value="2">
+                                <button class="hotel-search--plasminus">-</button>
+                                <label class="hotel-search--text" for="children">ДЕТИ:</label>
+                                <button class="hotel-search--plasminus">+</button>
+                                <input class="hotel-search--input hotel-search--number" type="number" name="children" id="id_children" value="0">
+                                <button class="hotel-search--plasminus">-</button>
                             </p>
-                            <p><button type="submit">НАЙТИ</button></p>
+                            <p><button class="hotel-search__submit" type="submit">НАЙТИ</button></p>
                         </form>
                     </div>
                 </div>
