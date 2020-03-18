@@ -127,3 +127,38 @@
 .article__book {
     background: var(--brown_color);
 }
+.range {
+    display: grid;
+    position: relative;
+    color: var(--white_color);
+    /* width: 300px; */
+}
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 12px;
+    border: var(--white_color) 2px solid;
+    border-radius: 4px;
+    color: var(--white_color);
+}
+.range input[type='number'] {
+    text-align: center;
+    border: none;
+    background: none;
+    color: var(--white_color);
+    width: 150px;
+}
+.input::before {
+    content: "";
+    display: block;
+    height: 26px;
+    width: 2px;
+    background: #ffffff;
+    position: absolute;
+    /* left: 46%; */
+    right: 52%;
+    /* top: 50%;
+    left: 50%; */
+    /* margin-top: -13px; */
+    /* margin-left: 1px; */
